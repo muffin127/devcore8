@@ -1,19 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@400;700&family=Public+Sans:wght@400;500;600;700&display=swap');
+
 :root {
-  /* font-family: Inter, Avenir, Helvetica, Arial, sans-serif; */
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
+  --color-scheme-1-background: var(--color-japanese-laurel-light);
+  --color-neutral-darkest: #010400;
+  --color-scheme-1-border: var(--opacity-white-20);
+  --color-scheme-1-text: var(--color-white);
+  --color-neutral-lighter: #d8d9d8;
+  --color-white: #fff;
+  --color-neutral-lightest: #f2f2f2;
+  --color-neutral-light: #b2b3b2;
+  --color-neutral: #80817f;
+  --color-neutral-dark: #4d4f4c;
+  --color-neutral-darker: #1a1d19;
+  --opacity-transparent: rgba(255, 255, 255, 0);
+  --color-scheme-1-foreground: var(--color-japanese-laurel-light);
+  --color-scheme-1-accent: var(--color-white);
+  --opacity-white-5: rgba(255, 255, 255, 0.05);
+  --opacity-white-10: rgba(255, 255, 255, 0.1);
+  --opacity-white-15: rgba(255, 255, 255, 0.15);
+  --opacity-white-20: rgba(255, 255, 255, 0.2);
+  --opacity-white-30: rgba(255, 255, 255, 0.3);
+  --opacity-white-40: rgba(255, 255, 255, 0.4);
+  --opacity-white-50: rgba(255, 255, 255, 0.5);
+  --opacity-white-60: rgba(255, 255, 255, 0.6);
+  --opacity-neutral-darkest-5: rgba(1, 4, 0, 0.05);
+  --opacity-neutral-darkest-10: rgba(1, 4, 0, 0.1);
+  --opacity-neutral-darkest-15: rgba(1, 4, 0, 0.15);
+  --opacity-neutral-darkest-20: rgba(1, 4, 0, 0.2);
+  --opacity-neutral-darkest-30: rgba(1, 4, 0, 0.3);
+  --opacity-neutral-darkest-40: rgba(1, 4, 0, 0.4);
+  --opacity-neutral-darkest-50: rgba(1, 4, 0, 0.5);
+  --opacity-neutral-darkest-60: rgba(1, 4, 0, 0.6);
+  --color-japanese-laurel-lightest: #e8eee5;
+  --color-japanese-laurel-lighter: #d1ddcc;
+  --color-japanese-laurel-light: #5e8a4d;
+  --color-japanese-laurel: #1a5901;
+  --color-japanese-laurel-dark: #144700;
+  --color-japanese-laurel-darker: #0a2300;
+  --color-japanese-laurel-darkest: #071a00;
+  --color-scheme-2-text: var(--color-neutral-darkest);
+  --color-scheme-2-background: var(--color-japanese-laurel-lightest);
+  --color-scheme-2-border: var(--opacity-neutral-darkest-15);
+  --color-scheme-2-accent: var(--color-japanese-laurel);
+  --color-scheme-2-foreground: var(--color-japanese-laurel-lightest);
+  --color-scheme-3-text: var(--color-white);
+  --color-scheme-3-background: var(--color-japanese-laurel);
+  --color-scheme-3-border: var(--opacity-white-20);
+  --color-scheme-3-accent: var(--color-white);
+  --color-scheme-3-foreground: var(--color-japanese-laurel);
+  --color-scheme-4-text: var(--color-neutral-darkest);
+  --color-scheme-4-background: var(--color-japanese-laurel-lighter);
+  --color-scheme-4-border: var(--opacity-neutral-darkest-15);
+  --color-scheme-4-accent: var(--color-japanese-laurel);
+  --color-scheme-4-foreground: var(--color-japanese-laurel-lighter);
+  --color-scheme-5-text: var(--color-white);
+  --color-scheme-5-background: var(--color-japanese-laurel-darker);
+  --color-scheme-5-border: var(--opacity-white-20);
+  --color-scheme-5-accent: var(--color-white);
+  --color-scheme-5-foreground: var(--color-japanese-laurel-darker);
+  --color-error-red: #a00000;
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  --font-family: 'Public Sans', sans-serif;
+  --second-family: 'Chivo', sans-serif;
 }
 
 body {
@@ -22,11 +70,14 @@ body {
   min-width: 100vw;
   min-height: 100vh;
   margin: 0;
+  font-family: var(--font-family);
+  color: var(--color-neutral-darkest);
 }
 
 main {
   flex-grow: 1;
 }
+
 main:has(.back-link) {
   text-align: center;
 }
