@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 h1,
 h2,
 h3,
@@ -25,10 +31,21 @@ a {
 
 button {
   cursor: pointer;
+  border: none;
+  background: transparent;
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
 }
 
 img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+input,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
 }
