@@ -1,1 +1,95 @@
-<section class="contacts"><h1>contacts</h1></section>
+<section class="contacts">
+  <div class="container">
+    <div class="contacts-content">
+      <div class="contacts-tittle">
+        <div class="tagline-wrapper">
+          <h2 class="tagline">Contacts</h2>
+          <div class="tittle-content">
+            <h1 class="first-tittle">Get in Touch</h1>
+            <p class="tittle-description">
+              We'd love to hear from you anytime!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="contacts-adress">
+        <address class="contacts-list">
+          <ul class="contact-tab">
+            <li>
+              <svg class="contacts-svg" width="24" height="24">
+                <use href="#"></use>
+              </svg>
+              <a class="contact-link" href="mailto:hello@organicstore.com"
+                >hello@organicstore.com</a
+              >
+            </li>
+            <li>
+              <svg class="contacts-svg" width="24" height="24">
+                <use href="#"></use>
+              </svg>
+              <a class="contact-link" href="tel:+15553291024"
+                >+1 (555) 329-1024</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
+      <form action="">
+        <div class="inp-wrp">
+          <label class="name-label" for="user-name">Name</label>
+          <div class="name-wrp">
+            <input
+              class="name-input"
+              type="text"
+              name="user-name"
+              id="user-name"
+              placeholder="Sarah"
+              pattern="^[a-zA-Z\s\.]{5,64}$"
+              required
+            />
+            <p class="text-invalid">Error text</p>
+          </div>
+        </div>
+        <div class="inp-wrp">
+          <label class="name-label" for="email">Email</label>
+          <div class="name-wrp">
+            <input
+              class="email-input"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="hello@organic.com"
+              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+              required
+            />
+            <p class="text-invalid">Error text</p>
+          </div>
+        </div>
+        <div class="inp-wrp">
+          <label class="name-label" for="user-message">Message</label>
+          <div class="name-wrp">
+            <textarea
+              class="text-input"
+              name="user-message"
+              id="user-message"
+              rows="7"
+              cols="30"
+              pattern=".{0,200}"
+              placeholder="Type your message..."
+              required
+            ></textarea>
+
+            <p class="text-invalid">Error Text</p>
+          </div>
+          <button class="btn-submit" type="submit">Submit</button>
+        </div>
+      </form>
+      <div class="contact-picture">
+        <picture>
+          <source srcset="./images/#" type="image/webp" />
+          <img src="#" alt="Contact image" />
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
