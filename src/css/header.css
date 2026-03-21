@@ -10,7 +10,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 100%;
 }
 
 .header-nav-item {
@@ -55,13 +54,13 @@
     }
 
     .header-btn-order:focus{
-        border: var(--color-white);
+        border: 1px solid var(--color-white);
         background: var(--color-scheme-3-text);
         color: var(--color-neutral-darkest);
     }
 
     .header-btn-order:active{
-        border: var(--color-scheme-3-text);
+        border: 1px solid var(--color-scheme-3-text);
         box-shadow: inset 2px 7px 27px -4px rgba(0, 0, 0, 0.15);
         background: var(--color-scheme-3-text);
     }
@@ -94,7 +93,7 @@
         display: block;
         font: 400 16px / 1.5 var(--font-family);
         color: var(--color-scheme-1-text);
-        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .header-nav-item:hover,
@@ -108,7 +107,7 @@
 
 
     .header-btn-order:hover{
-        border: var(--color-white);
+        border: 1px solid var(--color-white);
         background: var(--color-scheme-3-text);
         color: var(--color-neutral-darkest);
     }
@@ -122,6 +121,10 @@
 
 /*#region mobile menu*/
 
+.mobile-menu-backdrop {
+    display: none;
+}
+
 .mobile-menu {
     position: fixed;
     top: 0;
@@ -130,7 +133,8 @@
     height: 100%;
     background: var(--color-scheme-1-background);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    overflow-y: auto;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -160,7 +164,7 @@
 }
 
 .menu-close-icon {
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-close-icon:active{
@@ -186,7 +190,7 @@
 .mobile-menu-item {
     font: 600 18px / 1.5 var(--font-family);
     color: var(--color-scheme-1-text);
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu-item:focus{
@@ -222,19 +226,85 @@
 }
         
 .mobile-menu-btn:focus {
-    border: var(--color-white);
+    border: 1px solid var(--color-white);
     background: var(--color-scheme-3-text);
     color: var(--color-neutral-darkest);
 }
         
 .mobile-menu-btn:active {
-    border: var(--color-scheme-3-text);
+    border: 1px solid var(--color-scheme-3-text);
     box-shadow: inset 2px 7px 27px -4px rgba(0, 0, 0, 0.15);
     background: var(--color-scheme-3-text);
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {   
+      
+    .mobile-menu {
+        background: transparent;
+    }
 
+    .mobile-menu-backdrop {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--opacity-neutral-darkest-30);
+    }
+
+    .mobile-menu-container {
+        position: fixed;
+        top: 0;
+        right: 0;
+        max-width: 286px;
+        height: 100%;
+        background: var(--color-scheme-1-background);
+        overflow-y: auto;
+        transform: translateX(100%);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .mobile-menu.is-open .mobile-menu-container {
+        transform: translateX(0);
+    }
+
+    .mobile-menu-logo {
+        display: none;
+    }
+
+    .mobile-menu-controls {
+        justify-content: flex-end;
+        padding: 16px 0 24px;
+    }
+
+    .mobile-close-btn {
+        width: 44px;
+        height: 44px;
+    }
+
+    .menu-close-icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .mobile-menu-list {
+        align-items: flex-end;
+        padding: 0;
+        gap: 24px;
+    }
+
+    .mobile-menu-item {
+        font: 600 18px / 1.5 var(--font-family);
+        color: var(--color-scheme-1-text);
+    }
+
+    .mobile-menu-btn {
+        width: 222px;
+        padding: 2px 0;
+        font: 500 18px / 1.5 var(--font-family);
+    }
 }
+
 
 /*#endregion*/
