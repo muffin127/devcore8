@@ -1,0 +1,126 @@
+/* #region Feedbacks */
+.feedbacks {
+  padding-bottom: 63px;
+  padding-top: 64px;
+  background-color: #e8eee5;
+  width: 100%;
+  position: relative;
+}
+.container .feedbacks-container {
+  padding: 0 16px;
+  max-width: 375px;
+  box-sizing: border-box;
+}
+.feedbacks-header {
+  max-width: 343px;
+
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: center;
+  margin: 0 auto;
+}
+.feedbacks-title {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #010400;
+
+  width: 343px;
+  margin-left: auto;
+  margin-right: auto;
+  hyphens: auto;
+}
+.feedbacks-slogan {
+  font-family: var(--font-family);
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--color-scheme-2-text);
+
+  width: 343px;
+  margin-top: 16px;
+}
+.feedbacks-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 24px;
+
+  background-color: #e8eee5;
+
+  overflow-x: auto; /* включаем горизонтальный скролл */
+  scroll-snap-type: x mandatory; /* примагничиваем к карточкам */
+  scroll-padding: 16px; /* отступы слева/справа чтобы не прилипало к краю */
+  -webkit-overflow-scrolling: touch; /* плавный скролл на iOS */
+  scroll-behavior: smooth; /* плавная прокрутка при клике на якоря (если будут) */
+  margin: 0 -16px;
+  padding: 0 16px 16px;
+  scrollbar-width: none; /* убираем полосу прокрутки в Firefox */
+}
+
+feedbacks-list::-webkit-scrollbar {
+  display: none; /* убираем полосу в Chrome/Safari */
+}
+
+.feedbacks-item {
+  position: relative;
+  flex: 0 0 85%;
+  scroll-snap-align: start; /* ← примагничиваем к началу (левому краю) карточки */
+  min-width: 260px;
+}
+@media (max-width: 360px) {
+  .feedbacks-item {
+    flex: 0 0 88%;
+  }
+}
+.feedbacks-card {
+  margin-top: 24px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 24px;
+
+  border: 1px solid var(--color-scheme-2-border);
+  padding: 32px;
+  width: 343px;
+  height: 314px;
+  min-width: 300px;
+
+  background: var(--color-scheme-2-foreground);
+}
+.feedbacks-stars {
+}
+.feedbacks-comment {
+  margin-top: 24px;
+  font-family: var(--font-family);
+
+  font-weight: 400;
+  font-size: 18px;
+
+  line-height: 27px;
+  line-height: 1.5;
+  color: var(--color-scheme-2-text);
+}
+
+.feedbacks-user {
+  margin-top: 51px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 16px;
+
+  width: 279px;
+}
+.feedbacks-avatar {
+}
+.feedbacks-name {
+}
+/* #endregion */
