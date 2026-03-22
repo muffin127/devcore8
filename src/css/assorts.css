@@ -1,0 +1,83 @@
+.assorts {
+    padding: 64px 16px;
+    background: #d1ddcc;
+}
+
+/* .assortment {
+    padding: 0 16px;
+} */
+
+.assortment-title-third {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #010400;
+    margin-bottom: 16px;   
+}
+
+.assortment-title-second {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: #010400;
+    margin-bottom: 16px;
+}
+
+.assortment-main-wrapper {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.assortment-title-four {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #010400;
+}
+
+.assortment-description {
+    font-family: "Public Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #010400;
+}
+
+.assortment-price {
+    font-family: "Public Sans", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #010400;
+}
+
+.assortment-price-info {
+    font-family: "Public Sans", sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.3;
+    color: #010400;
+    max-width: 50px;
+    text-align: right;
+}
+
+.add-to-cart {
+    font-family: "Public Sans", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #010400;
+
+    border: 1px solid rgba(1, 4, 0, 0.15);
+    border-radius: 6px;
+    padding: 4px 10px;
+    width: 343px;
+    height: 40px;
+
+    margin-bottom: 16px;
+}
+
