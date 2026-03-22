@@ -1,3 +1,17 @@
+
+/* common */
+
+.add-to-cart {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.add-to-cart:hover,
+.add-to-cart:focus {
+    color: white;
+    background: #1a5901;
+    border: 1px solid rgba(1, 4, 0, 0.15);
+}
+
 /* common and mobile styles */
 
 .assorts {
