@@ -2,15 +2,16 @@
   padding-top: 183px;
   padding-bottom: 183px;
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.5)),
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     image-set(
-      url(../images/img-hero/jpg/hero-bg.jpg) 1x,
-      url(../images/img-hero/jpg/hero-bg@2x.jpg) 2x,
-      url(../images/img-hero/webp/hero-bg.webp) 1x,
-      url(../images/img-hero/webp/hero-bg@2x.webp) 2x
+      url('../images/img-hero/webp/hero-bg.webp') type('image/webp') 1x,
+      url('../images/img-hero/webp/hero-bg@2x.webp') type('image/webp') 2x,
+      url('../images/img-hero/jpg/hero-bg.jpg') type('image/jpeg') 1x,
+      url('../images/img-hero/jpg/hero-bg@2x.jpg') type('image/jpeg') 2x
     );
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   width: 100%;
 }
 @media only screen and (min-width: 768px) {
@@ -70,7 +71,8 @@
   color: #010400;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.hero-link:focus {
+.hero-link:hover,
+.hero-link:focus-visible {
   background-color: #5e8a4d;
 }
 @media only screen and (min-width: 768px) {
@@ -81,8 +83,5 @@
 @media only screen and (min-width: 1440px) {
   .hero-link {
     width: 199px;
-  }
-  .hero-link:hover {
-    background-color: #5e8a4d;
   }
 }
