@@ -201,4 +201,14 @@
     .mobile-menu {
         display: none;
     }
+
+    body:has(.mobile-menu.is-open) .header-btn-order {
+        display: block;
+    }
+
+    body:has(.mobile-menu.is-open) .mobile-menu-backdrop {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
 }
