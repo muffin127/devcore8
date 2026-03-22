@@ -1,0 +1,14 @@
+.benefits {
+    background-color: #1a5901;
+}
+
+.organic-food-picture {
+    width: 343px;
+    height: 487px;
+}
+
+.organic-food-benefits {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 
+}
