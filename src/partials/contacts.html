@@ -1,4 +1,4 @@
-<section class="contacts section">
+<section class="contacts section" id="contacts">
   <div class="container">
     <div class="contacts-content">
       <p class="tagline">Contacts</p>
@@ -7,14 +7,24 @@
       <p class="title-description">We'd love to hear from you anytime!</p>
 
       <address class="contacts-address">
-        <svg class="contacts-svg" width="24" height="24" aria-hidden="true">
+        <svg
+          class="contacts-svg-email"
+          width="24"
+          height="24"
+          aria-hidden="true"
+        >
           <use href="./images/icons.svg#icon-email"></use>
         </svg>
         <a class="contact-link" href="mailto:hello@organicstore.com"
           >hello@organicstore.com</a
         >
 
-        <svg class="contacts-svg" width="24" height="24" aria-hidden="true">
+        <svg
+          class="contacts-svg-phone"
+          width="24"
+          height="24"
+          aria-hidden="true"
+        >
           <use href="./images/icons.svg#icon-phone"></use>
         </svg>
         <a class="contact-link" href="tel:+15553291024">+1 (555) 329-1024</a>
@@ -55,11 +65,12 @@
             id="user-message"
             rows="7"
             cols="30"
+            minlength="2"
             maxlength="500"
             placeholder="Type your message..."
             required
           ></textarea>
-          <span class="contacts-form-error">Error text</span>
+          <span class="contacts-form-error">Error Text</span>
         </label>
         <button class="contacts-form-btn" type="submit">Submit</button>
       </form>
