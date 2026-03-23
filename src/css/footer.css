@@ -71,6 +71,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  .footer .footer-container {
+    width: 100%;
+  }
   .footer .nav-footer {
     flex-direction: row;
   }
@@ -89,16 +92,17 @@
   .footer .logo-icon:hover,
   .footer .logo-icon:focus,
   .footer .social-icon:hover,
-  .footer .logo-icon:focus,
+  .footer .social-icon:focus,
   .footer .nav-item:hover,
   .footer .nav-item:focus {
     opacity: 0.5;
   }
   .footer .footer-container {
     gap: 90px;
+    width: 100%;
   }
 
-  .logo-link {
+  .footer .logo-link {
     padding-right: 228px;
   }
 
@@ -117,7 +121,7 @@
     gap: 32px;
   }
 
-  .social-links {
+  .footer .social-links {
     padding-left: 134px;
   }
 }
