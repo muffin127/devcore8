@@ -1,16 +1,19 @@
-.benefits {
+.section-benefits {
     background-color: #1a5901;
-    padding: 64px 0; 
 }
 
-.images-wrapper {
+.image-content {
     margin-bottom: 24px;
 }
-
 .organic-food-image {
     width: 343px;
     height: 487px;
     object-fit: cover;
+
+}
+
+.benefits-slogan {
+    margin-bottom: 32px;
 }
 
 .benefits-title {
@@ -23,7 +26,6 @@
 }
 
 .benefits-text {
-    margin-bottom: 32px;
     font-weight: 400;
     font-size: 18px;
     line-height: 1.5;
@@ -65,11 +67,10 @@
 }
 
 @media only screen and (min-width: 768px) {
- .benefits {
-    padding: 64px 0; 
-}
+
 .organic-food-image {
    width: 704px;
+   height: 487px;
 }
 
 .benefits-list {
@@ -82,21 +83,32 @@
 }
 
 @media only screen and (min-width: 1440px) {
-    .benefits {
-        padding: 112px 0;
-    }
 
-
-    .images-wrapper {
+    .benefits-container {
         display: flex;
+        align-items: center;
+        gap: 24px;
     }
-
     .organic-food-image {
         width: 664px;
         height: 669px;
     }
 
-    .organic-food-benefits {
-    display: flex;
+    .text-content {
+        display: inline-block;
+        width: 644px;
+        height: 619px;
+    }
+
+    .benefits-title {
+        font-size: 48px;
+    }
+
+    .benefits-list {
+        gap: 24px;
+    
+    }
+    .benefits-list-item {
+    flex-basis: calc((100% - 24px) / 2);
     }
 }
