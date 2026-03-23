@@ -3,7 +3,8 @@
 }
 
 .mission .container {
-  width: 343px;
+  max-width: 343px;
+  width: 100%;
   margin: 0 auto;
   padding: 64px 0;
 }
@@ -31,21 +32,22 @@
 }
 
 .mission picture {
-  width: 343px;
+  display: block;
+  width: 100%;
   height: 192px;
 }
 
 .mission picture img {
-  width: 343px;
-  height: 192px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   display: block;
 }
 
-/* TABLET  */
+/* TABLET */
 @media (min-width: 768px) {
   .mission .container {
-    width: 704px;
+    max-width: 704px;
   }
 
   .mission-top {
@@ -65,12 +67,6 @@
   }
 
   .mission picture {
-    width: 704px;
-    height: 396px;
-  }
-
-  .mission picture img {
-    width: 704px;
     height: 396px;
   }
 }
@@ -78,7 +74,7 @@
 /* DESKTOP */
 @media (min-width: 1280px) {
   .mission .container {
-    width: 1312px;
+    max-width: 1312px;
     padding: 112px 0;
   }
 
@@ -96,12 +92,6 @@
   }
 
   .mission picture {
-    width: 1312px;
-    height: 738px;
-  }
-
-  .mission picture img {
-    width: 1312px;
     height: 738px;
   }
 }
