@@ -139,6 +139,7 @@
   width: 100%;
   height: 166px;
   background: rgba(255, 255, 255, 0);
+  resize: none;
 }
 .contacts-form-input:not(:placeholder-shown):invalid {
   border-bottom-color: #a00000;
