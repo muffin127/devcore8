@@ -18,7 +18,10 @@
 
 .footer .logo-icon {
   fill: var(--color-scheme-3-text);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  transition:
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer .nav-item {
@@ -28,7 +31,10 @@
   font-size: 16px;
   line-height: 150%;
   color: var(--color-scheme-1-text);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  transition:
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer .social-links {
@@ -42,7 +48,10 @@
 .footer .social-icon {
   display: flex;
   fill: var(--color-scheme-5-text);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  transition:
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer .copyright {
@@ -68,6 +77,10 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
+  transition:
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width: 768px) {
@@ -96,6 +109,9 @@
   .footer .nav-item:hover,
   .footer .nav-item:focus {
     opacity: 0.5;
+
+    transform: translate(5px, -5px);
+
     text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   }
   .footer .footer-container {
