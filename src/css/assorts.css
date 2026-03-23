@@ -42,7 +42,11 @@
     margin-bottom: 16px;
 }
 
-.assorts-title-four {
+.assorts-img {
+    margin-bottom: 16px;
+}
+
+.assorts-title {
     font-family: var(--font-family);
     font-weight: 600;
     font-size: 18px;
@@ -56,6 +60,12 @@
     font-size: 14px;
     line-height: 1.5;
     color: #010400;
+}
+
+.assorts-wrapper-second {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .assorts-price {
