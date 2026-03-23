@@ -123,10 +123,6 @@
     width: 100%;
   }
 
-  .footer .logo-link {
-    padding-right: 228px;
-  }
-
   .footer .logo-icon {
     width: 84px;
     height: 36px;
@@ -134,15 +130,14 @@
 
   .footer .copyright {
     width: 100%;
-    max-width: 1312px;
+    max-width: 1280px;
   }
 
   .footer-top {
     flex-direction: row;
     gap: 32px;
-  }
-
-  .footer .social-links {
-    padding-left: 134px;
+    justify-content: space-between;
+    max-width: 1280px;
+    width: 100%;
   }
 }
