@@ -44,7 +44,7 @@
 
   font-weight: 400;
   font-size: 18px;
-  line-height: 27px;
+
   line-height: 1.5;
   text-align: center;
   color: var(--color-scheme-2-text);
@@ -54,10 +54,13 @@
   margin-top: 16px;
 }
 .feedbacks-list {
+  margin-top: 24px;
+
   display: flex;
   flex-direction: column;
   gap: 24px;
-  margin-top: 24px;
+
+  padding: 0 16px 16px;
 
   background-color: #e8eee5;
 
@@ -66,7 +69,7 @@
   scroll-padding: 16px; /* отступы слева/справа чтобы не прилипало к краю */
   -webkit-overflow-scrolling: touch; /* плавный скролл на iOS */
   scroll-behavior: smooth; /* плавная прокрутка при клике на якоря (если будут) */
-  margin: 0 -16px;
+
   padding: 0 16px 16px;
   scrollbar-width: none; /* убираем полосу прокрутки в Firefox */
 }
@@ -76,7 +79,6 @@
 }
 
 .feedbacks-item {
-  margin-top: 24px;
   position: relative;
   flex: 0 0 85%;
   scroll-snap-align: start; /* ← примагничиваем к началу (левому краю) карточки */
@@ -104,7 +106,6 @@
   background: var(--color-scheme-2-foreground);
 }
 .feedbacks-stars {
-  padding-top: 32px;
   padding-right: 0;
   display: flex;
   align-items: center;
@@ -125,7 +126,7 @@
 }
 
 .feedbacks-user {
-  margin-top: 78px;
+  margin-top: 24px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -158,8 +159,8 @@
 /* #region Feedbacks-Tablet */
 @media (min-width: 768px) {
   .feedbacks-container {
-    padding-left: 32px;
-    padding-right: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
     max-width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -167,7 +168,7 @@
 
   .feedbacks-card {
     height: 100%;
-    width: 314px;
+    width: 340px;
   }
 
   .feedbacks-list {
@@ -184,8 +185,8 @@
   }
 
   .feedbacks-item {
-    flex: 0 0 calc((100% - 24px) / 2);
     margin-top: 24px;
+    flex: 0 0 340px;
   }
 
   .feedbacks-card {
@@ -206,7 +207,7 @@
     flex-direction: column;
     gap: 24px;
 
-    max-width: 644px;
+    max-width: 100%;
     width: 100%;
     margin: 0 auto;
     padding: 0;
@@ -220,7 +221,9 @@
     text-align: center;
     color: var(--color-scheme-2-text);
     width: 100%;
-    white-space: nowrap; /* Возвращаем, чтобы текст был в одну строку */
+    white-space: normal;
+    white-space: nowrap;
+    font-size: clamp(22px, 4vw, 36px);
   }
 
   .feedbacks-slogan {
@@ -236,7 +239,7 @@
 /* #endregion */
 
 /* #region Feedbacks-Desktop */
-/* #region Feedbacks-Desktop */
+
 @media (min-width: 1440px) {
   .feedbacks {
     padding-top: 100px;
@@ -315,9 +318,6 @@
   }
 }
 /* #endregion */
-/* =========================
-   FEEDBACKS ANIMATIONS
-========================= */
 
 /* карточка — базовая плавность */
 .feedbacks-card {
@@ -525,4 +525,22 @@
 
 .feedbacks-header:hover {
   transform: translateY(-3px);
+}
+@media (max-width: 767px) {
+  .feedbacks-item {
+    opacity: 1;
+    transform: none;
+    animation: none;
+  }
+
+  .feedbacks-card,
+  .feedbacks-item:hover .feedbacks-card {
+    transform: none !important;
+  }
+}
+.feedbacks-item {
+  scroll-snap-align: start;
+}
+.feedbacks-title {
+  max-width: 100%;
 }
