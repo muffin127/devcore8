@@ -1,0 +1,528 @@
+/* #region Feedbacks */
+.feedbacks {
+  padding-bottom: 63px;
+  padding-top: 64px;
+  background-color: #e8eee5;
+  width: 100%;
+  position: relative;
+}
+.container .feedbacks-container {
+  padding: 0 16px;
+  max-width: 375px;
+  box-sizing: border-box;
+}
+.feedbacks-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 343px;
+
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: center;
+  margin: 0 auto;
+}
+.feedbacks-title {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #010400;
+
+  width: 100%;
+  max-width: 343px;
+
+  margin-left: auto;
+  margin-right: auto;
+  hyphens: auto;
+}
+.feedbacks-slogan {
+  font-family: var(--font-family);
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--color-scheme-2-text);
+
+  max-width: 343px;
+  width: 100%;
+  margin-top: 16px;
+}
+.feedbacks-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 24px;
+
+  background-color: #e8eee5;
+
+  overflow-x: auto; /* включаем горизонтальный скролл */
+  scroll-snap-type: x mandatory; /* примагничиваем к карточкам */
+  scroll-padding: 16px; /* отступы слева/справа чтобы не прилипало к краю */
+  -webkit-overflow-scrolling: touch; /* плавный скролл на iOS */
+  scroll-behavior: smooth; /* плавная прокрутка при клике на якоря (если будут) */
+  margin: 0 -16px;
+  padding: 0 16px 16px;
+  scrollbar-width: none; /* убираем полосу прокрутки в Firefox */
+}
+
+.feedbacks-list::-webkit-scrollbar {
+  display: none; /* убираем полосу в Chrome/Safari */
+}
+
+.feedbacks-item {
+  margin-top: 24px;
+  position: relative;
+  flex: 0 0 85%;
+  scroll-snap-align: start; /* ← примагничиваем к началу (левому краю) карточки */
+  min-width: 260px;
+}
+@media (max-width: 360px) {
+  .feedbacks-item {
+    flex: 0 0 88%;
+  }
+}
+
+.feedbacks-card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  border: 1px solid var(--color-scheme-2-border);
+  padding: 32px;
+
+  width: 100%;
+  min-height: 314px;
+
+  box-sizing: border-box;
+
+  background: var(--color-scheme-2-foreground);
+}
+.feedbacks-stars {
+  padding-top: 32px;
+  padding-right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 4px;
+}
+.feedbacks-comment {
+  margin-top: 0;
+  font-family: var(--font-family);
+
+  font-weight: 400;
+  font-size: 18px;
+
+  line-height: 27px;
+  line-height: 1.5;
+  color: var(--color-scheme-2-text);
+}
+
+.feedbacks-user {
+  margin-top: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 16px;
+
+  width: 100%;
+}
+.feedbacks-avatar {
+  overflow: hidden;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  display: block;
+}
+.feedbacks-name {
+  font-family: var(--font-family);
+
+  font-weight: 600;
+  font-size: 16px;
+
+  line-height: 24px;
+  line-height: 1.5;
+  color: var(--color-scheme-2-text);
+}
+/* #endregion */
+/* #region Feedbacks-Tablet */
+
+/* #region Feedbacks-Tablet */
+@media (min-width: 768px) {
+  .feedbacks-container {
+    padding-left: 32px;
+    padding-right: 32px;
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .feedbacks-card {
+    height: 100%;
+    width: 314px;
+  }
+
+  .feedbacks-list {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: wrap;
+    overflow: visible;
+
+    gap: 24px;
+    margin: 48px 0 0;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .feedbacks-item {
+    flex: 0 0 calc((100% - 24px) / 2);
+    margin-top: 24px;
+  }
+
+  .feedbacks-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .feedbacks-user {
+    margin-top: auto;
+    margin-bottom: 0;
+  }
+
+  .feedbacks-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 24px;
+
+    max-width: 644px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .feedbacks-title {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: var(--color-scheme-2-text);
+    width: 100%;
+    white-space: nowrap; /* Возвращаем, чтобы текст был в одну строку */
+  }
+
+  .feedbacks-slogan {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+    color: var(--color-scheme-2-text);
+    max-width: 644px;
+    width: 100%;
+  }
+}
+/* #endregion */
+
+/* #region Feedbacks-Desktop */
+/* #region Feedbacks-Desktop */
+@media (min-width: 1440px) {
+  .feedbacks {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .feedbacks-container {
+    max-width: 1440px;
+    padding: 0 64px;
+    margin: 0 auto;
+  }
+
+  .feedbacks-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .feedbacks-title {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: var(--color-scheme-2-text);
+    width: auto;
+    white-space: nowrap;
+    max-width: 100%;
+  }
+
+  .feedbacks-slogan {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+    color: var(--color-scheme-2-text);
+    width: 100%;
+    max-width: 644px; /* Ограничиваем ширину для переноса строк */
+    margin: 0 auto;
+    /* Убеждаемся что нет white-space: nowrap */
+    white-space: normal;
+    word-wrap: break-word;
+  }
+
+  /* Grid layout: 4 columns with 24px gap */
+  .feedbacks-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-top: 56px;
+    justify-items: center;
+  }
+
+  /* Remove flex properties that might interfere */
+  .feedbacks-item {
+    margin-top: 0;
+    flex: none;
+    min-width: auto;
+    width: 100%;
+  }
+
+  .feedbacks-card {
+    width: 100%;
+    min-height: 340px;
+    transition: all 0.25s;
+    padding: 32px 28px;
+  }
+
+  .feedbacks-comment {
+    font-size: 18px;
+  }
+}
+/* #endregion */
+/* =========================
+   FEEDBACKS ANIMATIONS
+========================= */
+
+/* карточка — базовая плавность */
+.feedbacks-card {
+  position: relative;
+  overflow: hidden;
+
+  transition:
+    transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.35s ease;
+}
+
+/* hover всей карточки */
+.feedbacks-item:hover .feedbacks-card {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+}
+
+/* текст НЕ прыгает — только плавность */
+.feedbacks-comment,
+.feedbacks-name,
+.feedbacks-avatar,
+.feedbacks-stars svg {
+  transition: all 0.25s ease;
+}
+
+/* аватар */
+.feedbacks-item:hover .feedbacks-avatar {
+  transform: scale(1.05);
+}
+
+/* звёзды — мягкое увеличение */
+.feedbacks-item:hover .feedbacks-stars svg {
+  transform: scale(1.08);
+}
+
+/* лёгкий stagger для звёзд */
+.feedbacks-item:hover .feedbacks-stars svg:nth-child(1) {
+  transition-delay: 0s;
+}
+.feedbacks-item:hover .feedbacks-stars svg:nth-child(2) {
+  transition-delay: 0.05s;
+}
+.feedbacks-item:hover .feedbacks-stars svg:nth-child(3) {
+  transition-delay: 0.1s;
+}
+
+/* shimmer эффект */
+.feedbacks-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.25),
+    transparent
+  );
+  transition: 0.6s;
+}
+
+.feedbacks-card:hover::before {
+  left: 150%;
+}
+
+/* лёгкий tap эффект на мобилке */
+.feedbacks-item:active .feedbacks-card {
+  transform: scale(0.98);
+}
+
+/* горизонтальный скролл */
+.feedbacks-list {
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+/* стартовое состояние */
+.feedbacks-item {
+  opacity: 0;
+  transform: translateY(25px);
+  transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* когда появляется в зоне видимости */
+@supports (animation-timeline: view()) {
+  .feedbacks-item {
+    animation: reveal linear both;
+    animation-timeline: view();
+    animation-range: entry 10% cover 30%;
+  }
+
+  @keyframes reveal {
+    from {
+      opacity: 0;
+      transform: translateY(25px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+.feedbacks-card {
+  position: relative;
+  overflow: hidden;
+}
+
+/* свет */
+.feedbacks-card::after {
+  content: '';
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.25),
+    transparent 60%
+  );
+  top: var(--y, 50%);
+  left: var(--x, 50%);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+/* включаем glow на hover */
+.feedbacks-item:hover .feedbacks-card::after {
+  opacity: 1;
+}
+.feedbacks-card::after {
+  animation: pulse 3s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.15;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.2);
+    opacity: 0.25;
+  }
+}
+.feedbacks-item:hover .feedbacks-card {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+.feedbacks-stars svg {
+  transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.feedbacks-item:hover .feedbacks-stars svg {
+  transform: scale(1.06);
+}
+.feedbacks-title,
+.feedbacks-slogan {
+  opacity: 0;
+  transform: translateY(12px);
+  animation: textReveal 0.8s ease forwards;
+}
+
+.feedbacks-slogan {
+  animation-delay: 0.15s;
+}
+
+@keyframes textReveal {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.feedbacks-title,
+.feedbacks-slogan {
+  opacity: 0;
+  transform: translateY(10px);
+  filter: blur(6px);
+  animation: blurIn 0.9s ease forwards;
+}
+
+.feedbacks-slogan {
+  animation-delay: 0.15s;
+}
+
+@keyframes blurIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+.feedbacks-title {
+  letter-spacing: 0.05em;
+  transition: letter-spacing 0.4s ease;
+}
+
+.feedbacks-header:hover .feedbacks-title {
+  letter-spacing: -0.01em;
+}
+.feedbacks-header {
+  transition: transform 0.3s ease;
+}
+
+.feedbacks-header:hover {
+  transform: translateY(-3px);
+}
