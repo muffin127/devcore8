@@ -1,0 +1,114 @@
+.section-benefits {
+    background-color: #1a5901;
+}
+
+.image-content {
+    margin-bottom: 24px;
+}
+.organic-food-image {
+    width: 343px;
+    height: 487px;
+    object-fit: cover;
+
+}
+
+.benefits-slogan {
+    margin-bottom: 32px;
+}
+
+.benefits-title {
+    margin-bottom: 24px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: #fff;
+}
+
+.benefits-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.benefits-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+.benefits-list-item {
+    flex-basis: 100%;
+}
+
+.benefits-item-icon {
+    margin-bottom: 16px;
+    fill: #fff;
+}
+
+.benefits-item-title {
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: -0.01em;
+    color: #fff;
+}
+
+.benefits-item-text {
+    margin-bottom: 32px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fff;
+}
+
+@media only screen and (min-width: 768px) {
+
+.organic-food-image {
+   width: 704px;
+   height: 487px;
+}
+
+.benefits-list {
+    column-gap: 16px;
+}
+.benefits-list-item {
+    flex-basis: calc((100% - 16px) / 2);
+  }
+
+}
+
+@media only screen and (min-width: 1440px) {
+
+    .benefits-container {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    }
+    .organic-food-image {
+        width: 664px;
+        height: 669px;
+    }
+
+    .text-content {
+        display: inline-block;
+        width: 644px;
+        height: 619px;
+    }
+
+    .benefits-title {
+        font-size: 48px;
+    }
+
+    .benefits-list {
+        gap: 24px;
+    
+    }
+    .benefits-list-item {
+    flex-basis: calc((100% - 24px) / 2);
+    }
+}
