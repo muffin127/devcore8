@@ -1,1 +1,98 @@
-<section class="contacts"><h1>contacts</h1></section>
+<section class="contacts section" id="contacts">
+  <div class="container desk-contacts">
+    <div class="contacts-content">
+      <p class="tagline">Contacts</p>
+
+      <h2 class="first-title">Get in Touch</h2>
+      <p class="title-description">We'd love to hear from you anytime!</p>
+
+      <address class="contacts-address">
+        <svg
+          class="contacts-svg-email"
+          width="24"
+          height="24"
+          aria-hidden="true"
+        >
+          <use href="./images/icons.svg#icon-email"></use>
+        </svg>
+        <a class="contact-link" href="mailto:hello@organicstore.com"
+          >hello@organicstore.com</a
+        >
+
+        <svg
+          class="contacts-svg-phone"
+          width="24"
+          height="24"
+          aria-hidden="true"
+        >
+          <use href="./images/icons.svg#icon-phone"></use>
+        </svg>
+        <a class="contact-link" href="tel:+15553291024">+1 (555) 329-1024</a>
+      </address>
+
+      <form class="contacts-form" action="#" method="POST" novalidate>
+        <label class="contacts-form-label" for="user-name">
+          Name
+          <input
+            class="contacts-form-input"
+            type="text"
+            name="user-name"
+            id="user-name"
+            placeholder="Sarah"
+            pattern="^[a-zA-Z\s\.]{5,64}$"
+            required
+          />
+          <span class="contacts-form-error">Error text</span>
+        </label>
+        <label class="contacts-form-label" for="email">
+          Email
+          <input
+            class="contacts-form-input"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="hello@organic.com"
+            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+            required
+          />
+          <span class="contacts-form-error">Error text</span>
+        </label>
+        <label class="contacts-form-label" for="user-message">
+          Message
+          <textarea
+            class="contacts-form-textarea"
+            name="user-message"
+            id="user-message"
+            rows="7"
+            cols="30"
+            minlength="2"
+            maxlength="500"
+            placeholder="Type your message..."
+            required
+          ></textarea>
+          <span class="contacts-form-error">Error Text</span>
+        </label>
+        <button class="contacts-form-btn" type="submit">Submit</button>
+      </form>
+    </div>
+    <div class="contacts-image">
+      <picture>
+        <source
+          srcset="
+            ./images/img-contacts/webp/contacts-banner.webp    1x,
+            ./images/img-contacts/webp/contacts-banner@2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <img
+          src="./images/img-contacts/jpg/contacts-banner.jpg"
+          srcset="
+            ./images/img-contacts/jpg/contacts-banner.jpg    1x,
+            ./images/img-contacts/jpg/contacts-banner@2x.jpg 2x
+          "
+          alt="Our team"
+        />
+      </picture>
+    </div>
+  </div>
+</section>
