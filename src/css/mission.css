@@ -1,12 +1,13 @@
 .mission {
   background: var(--color-scheme-1-background);
+  padding: 64px 0;
 }
 
-.mission .container {
-  max-width: 343px;
+.container {
   width: 100%;
+  max-width: 343px;
+  padding: 0 16px;
   margin: 0 auto;
-  padding: 64px 0;
 }
 
 .mission-top {
@@ -45,9 +46,10 @@
 }
 
 /* TABLET */
-@media (min-width: 768px) {
-  .mission .container {
+@media only screen and (min-width: 768px) {
+  .container {
     max-width: 704px;
+    padding: 0 32px;
   }
 
   .mission-top {
@@ -72,10 +74,18 @@
 }
 
 /* DESKTOP */
-@media (min-width: 1280px) {
+@media only screen and (min-width: 1440px) {
+  .container {
+    max-width: 1312px;
+    padding: 0 32px;
+  }
+
+  .mission {
+    padding: 112px 0;
+  }
+
   .mission .container {
     max-width: 1312px;
-    padding: 112px 0;
   }
 
   .mission-top {
