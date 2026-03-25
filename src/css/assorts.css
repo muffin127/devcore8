@@ -46,8 +46,24 @@
     margin-bottom: 16px;
 }
 
+@media only screen and (min-width: 768px) {
+    .assorts-main-wrapper {
+        margin-bottom: 24px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .assorts-main-wrapper {
+        margin-bottom: 37px;
+    }
+}
+
 .assorts-img {
     margin-bottom: 16px;
+}
+
+.assorts-wrapper-fist {
+    margin-right: 16px;
 }
 
 .assorts-title {
@@ -65,7 +81,7 @@
     line-height: 1.5;
     color: #010400;
 
-    /* to male not full text in description with "..."  */
+    /* do not full text in description with "..."  */
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
@@ -108,8 +124,6 @@
     padding: 4px 10px;
     width: 100%;
     height: 40px;
-
-    margin-bottom: 16px;
 }
 
 /* tablet styles */
@@ -132,6 +146,13 @@
         flex-basis: calc((100% - 16px) / 2);
     }
 
+}
+
+@media only screen and (min-width: 1440px) {
+    .assorts-title-second {
+        width: 768px;
+        font-size: 48px;
+    }
 }
 
 /* tesktop styles */
