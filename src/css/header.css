@@ -45,6 +45,13 @@
 }
 
 @media only screen and (min-width: 768px) {
+    .main-nav {
+        margin-inline: auto 16px;
+    }
+    
+    .header-nav-item {
+        padding-block: 6px;
+    }
 
     .header-btn-order {
         display: block;
@@ -79,9 +86,6 @@
         background: var(--color-scheme-3-text);
     }
 
-    .main-nav {
-        margin: 6px 16px 6px auto;
-    }
 
     .burger-btn {
         width: 44px;

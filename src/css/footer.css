@@ -1,0 +1,131 @@
+.footer {
+  background: var(--color-scheme-5-background);
+}
+
+.footer .footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 0;
+
+  gap: 40px;
+}
+
+.footer-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.footer .logo-icon {
+  fill: var(--color-scheme-3-text);
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer .nav-item {
+  cursor: pointer;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--color-scheme-1-text);
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer .social-links {
+  display: flex;
+  flex-direction: row;
+  gap: 11px;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer .social-icon {
+  display: flex;
+  fill: var(--color-scheme-5-text);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer .copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid var(--color-scheme-5-border);
+  width: 100%;
+  max-width: 343px;
+  height: 53px;
+  padding-top: 35px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--color-scheme-5-text);
+}
+
+.footer .nav-footer {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .footer .footer-container {
+    width: 100%;
+  }
+  .footer .nav-footer {
+    flex-direction: row;
+  }
+
+  .footer .logo-icon {
+    width: 162px;
+    height: 70px;
+  }
+  .footer .copyright {
+    width: 100%;
+    max-width: 704px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .footer .logo-icon:hover,
+  .footer .logo-icon:focus,
+  .footer .social-icon:hover,
+  .footer .social-icon:focus,
+  .footer .nav-item:hover,
+  .footer .nav-item:focus {
+    opacity: 0.5;
+    text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  }
+  .footer .footer-container {
+    gap: 90px;
+    width: 100%;
+  }
+
+  .footer .logo-icon {
+    width: 84px;
+    height: 36px;
+  }
+
+  .footer .copyright {
+    width: 100%;
+    max-width: 1280px;
+  }
+
+  .footer-top {
+    flex-direction: row;
+    gap: 32px;
+    justify-content: space-between;
+    max-width: 1280px;
+    width: 100%;
+  }
+}
