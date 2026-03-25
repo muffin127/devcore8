@@ -73,6 +73,7 @@ body {
   margin: 0;
   font-family: var(--font-family);
   color: var(--color-neutral-darkest);
+  background-color: #5e8a4d;
 }
 
 main {
