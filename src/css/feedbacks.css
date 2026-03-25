@@ -67,7 +67,6 @@
   -webkit-overflow-scrolling: touch; /* плавный скролл на iOS */
   scroll-behavior: smooth; /* плавная прокрутка при клике на якоря (если будут) */
   margin: 0 -16px;
-  padding: 0 16px 16px;
   scrollbar-width: none; /* убираем полосу прокрутки в Firefox */
 }
 
