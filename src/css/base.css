@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@400;700&family=Public+Sans:wght@400;500;600;700&display=swap');
-
+html {
+  scroll-behavior: smooth;
+}
 :root {
   --color-scheme-1-background: var(--color-japanese-laurel-light);
   --color-neutral-darkest: #010400;
@@ -80,4 +81,8 @@ main {
 
 main:has(.back-link) {
   text-align: center;
+}
+
+html {
+  scroll-behavior: smooth;
 }

@@ -1,0 +1,114 @@
+.faq {
+  background: #5e8a4d;
+  padding: 64px 0;
+  color: white;
+  font-family: var(--font-family);
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+@media only screen and (min-width: 1440px) {
+  .faq {
+    padding: 112px 0;
+  }
+  .faq .container {
+    display: flex;
+    gap: 24px;
+  }
+}
+
+.faq-title {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: var(--color-scheme-1-text);
+  margin-bottom: 8px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .faq-title {
+    font-size: 48px;
+    margin-bottom: 24px;
+  }
+}
+
+.faq-info {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--color-scheme-1-text);
+}
+
+.faq-wrapper {
+  margin-bottom: 16px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .faq-wrapper {
+    width: 421px;
+    flex-shrink: 0;
+    margin-bottom: 0;
+  }
+  .faq-questions-wrapper {
+    width: 867px;
+  }
+}
+
+.faq-accordion-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.faq-accordion-item {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.faq-accordion-item:last-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.faq-accordion-header {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 20px 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-accordion-question {
+  color: var(--color-scheme-1-text);
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.5;
+  display: block;
+  text-align: left;
+  padding-right: 16px;
+}
+
+.faq-arrow {
+  display: block;
+  flex-shrink: 0;
+}
+
+.faq-accordion-icon {
+  fill: none;
+  stroke: var(--color-scheme-1-text);
+  stroke-width: 1px;
+}
+
+.faq-accordion-content {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-scheme-1-text);
+  margin-bottom: 24px;
+}
