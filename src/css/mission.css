@@ -3,13 +3,6 @@
   padding: 64px 0;
 }
 
-.container {
-  width: 100%;
-  max-width: 343px;
-  padding: 0 16px;
-  margin: 0 auto;
-}
-
 .mission-top {
   margin-bottom: 32px;
 }
@@ -47,11 +40,6 @@
 
 /* TABLET */
 @media only screen and (min-width: 768px) {
-  .container {
-    max-width: 704px;
-    padding: 0 32px;
-  }
-
   .mission-top {
     display: flex;
     align-items: flex-start;
@@ -75,17 +63,8 @@
 
 /* DESKTOP */
 @media only screen and (min-width: 1440px) {
-  .container {
-    max-width: 1312px;
-    padding: 0 32px;
-  }
-
   .mission {
     padding: 112px 0;
-  }
-
-  .mission .container {
-    max-width: 1312px;
   }
 
   .mission-top {
