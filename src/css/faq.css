@@ -1,6 +1,6 @@
 .faq {
     background: #5e8a4d;
-    padding: 64px 16px;
+    padding: 64px 0;
     color: white;
     font-family: "Public Sans", sans-serif;
     font-weight: 400;
@@ -10,7 +10,7 @@
 @media screen and (min-width: 768px) {
 
     .faq {
-        padding: 64px 32px;
+        padding: 64px 0;
     }
 
 }
@@ -18,8 +18,15 @@
 @media screen and (min-width: 1440px) {
    
     .faq {
-        padding: 112px 64px;
+        padding: 112px 0;
+    }
+
+    .faq .container {
         display: flex;
+    }
+
+    .faq-wrapper {
+        margin-right: 83px;
     }
 
 }
