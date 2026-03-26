@@ -48,8 +48,12 @@
   max-width: 343px;
   width: 100%;
   margin: 16px 0 24px 0;
-  
 }
+
+.feedbacks-header .feedbacks-slogan {
+  margin: 16px 0 24px 0; /* це перекриє p:last-child */
+}
+
 .feedbacks-list {
   margin-top: 24px;
 
@@ -78,7 +82,7 @@
   scroll-snap-align: start; /* ← примагничиваем к началу (левому краю) карточки */
   min-width: 260px;
 }
-@media (max-width: 360px) {
+@media (max-width: 368px) {
   .feedbacks-item {
     flex: 0 0 88%;
   }
