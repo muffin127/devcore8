@@ -4,10 +4,10 @@
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     image-set(
-      url('../images/img-hero/webp/hero-bg.webp') type('image/webp') 1x,
-      url('../images/img-hero/webp/hero-bg@2x.webp') type('image/webp') 2x,
-      url('../images/img-hero/jpg/hero-bg.jpg') type('image/jpeg') 1x,
-      url('../images/img-hero/jpg/hero-bg@2x.jpg') type('image/jpeg') 2x
+      url('/images/img-hero/webp/hero-bg.webp') type('image/webp') 1x,
+      url('/images/img-hero/webp/hero-bg@2x.webp') type('image/webp') 2x,
+      url('/images/img-hero/jpg/hero-bg.jpg') type('image/jpeg') 1x,
+      url('/images/img-hero/jpg/hero-bg@2x.jpg') type('image/jpeg') 2x
     );
   background-size: cover;
   background-position: center;

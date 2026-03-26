@@ -6,10 +6,8 @@
   width: 100%;
   position: relative;
 }
-.container .feedbacks-container {
-  padding: 0 16px;
-  max-width: 375px;
-  box-sizing: border-box;
+.feedbacks-container {
+  margin: 0 auto;
 }
 .feedbacks-header {
   display: flex;
@@ -17,12 +15,10 @@
   align-items: center;
   justify-content: center;
   max-width: 343px;
-
-  padding-left: 16px;
-  padding-right: 16px;
   text-align: center;
   margin: 0 auto;
 }
+
 .feedbacks-title {
   font-family: var(--second-family);
   font-weight: 400;
@@ -51,16 +47,19 @@
 
   max-width: 343px;
   width: 100%;
-  margin-top: 16px;
+  margin: 16px 0 24px 0;
 }
+
+.feedbacks-header .feedbacks-slogan {
+  margin: 16px 0 24px 0; /* це перекриє p:last-child */
+}
+
 .feedbacks-list {
   margin-top: 24px;
 
   display: flex;
   flex-direction: column;
   gap: 24px;
-
-  padding: 0 16px 16px;
 
   background-color: #e8eee5;
 
@@ -69,8 +68,7 @@
   scroll-padding: 16px; /* отступы слева/справа чтобы не прилипало к краю */
   -webkit-overflow-scrolling: touch; /* плавный скролл на iOS */
   scroll-behavior: smooth; /* плавная прокрутка при клике на якоря (если будут) */
-
-  padding: 0 16px 16px;
+  margin: 0 -16px;
   scrollbar-width: none; /* убираем полосу прокрутки в Firefox */
 }
 
@@ -84,7 +82,7 @@
   scroll-snap-align: start; /* ← примагничиваем к началу (левому краю) карточки */
   min-width: 260px;
 }
-@media (max-width: 360px) {
+@media (max-width: 368px) {
   .feedbacks-item {
     flex: 0 0 88%;
   }
@@ -99,7 +97,6 @@
   padding: 32px;
 
   width: 100%;
-  min-height: 314px;
 
   box-sizing: border-box;
 
@@ -185,7 +182,7 @@
   }
 
   .feedbacks-item {
-    margin-top: 24px;
+    margin-top: 0;
     flex: 0 0 340px;
   }
 
@@ -543,4 +540,9 @@
 }
 .feedbacks-title {
   max-width: 100%;
+}
+/* Убираем отступы у списка, чтобы карточки не прилипали к краям при скролле */
+.feedbacks-list {
+  margin-left: -16px;
+  margin-right: -16px;
 }
