@@ -6,10 +6,8 @@
   width: 100%;
   position: relative;
 }
-.container .feedbacks-container {
-  padding: 0 16px;
-  max-width: 375px;
-  box-sizing: border-box;
+.feedbacks-container {
+  margin: 0 auto;
 }
 .feedbacks-header {
   display: flex;
@@ -60,8 +58,6 @@
   flex-direction: column;
   gap: 24px;
 
-  padding: 0 16px 16px;
-
   background-color: #e8eee5;
 
   overflow-x: auto; /* включаем горизонтальный скролл */
@@ -99,7 +95,6 @@
   padding: 32px;
 
   width: 100%;
-  min-height: 314px;
 
   box-sizing: border-box;
 
@@ -185,7 +180,7 @@
   }
 
   .feedbacks-item {
-    margin-top: 24px;
+    margin-top: 0;
     flex: 0 0 340px;
   }
 
@@ -543,4 +538,9 @@
 }
 .feedbacks-title {
   max-width: 100%;
+}
+/* Убираем отступы у списка, чтобы карточки не прилипали к краям при скролле */
+.feedbacks-list {
+  margin-left: -16px;
+  margin-right: -16px;
 }
